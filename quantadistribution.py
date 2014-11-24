@@ -25,8 +25,8 @@ def convertodistribution(inputlist):    # Find the frequency of each value in th
     return output
 
 atoms = []
-totalatoms = 5000                       # How many items are the quanta distributed between?
-iterations = 800000                     # How many times should the quanta be exchaged
+totalatoms = 1000                       # How many items are the quanta distributed between?
+iterations = 50000                     # How many times should the quanta be exchaged
 averageenergy = 100                     # How many quanta does each item have before the first ittereation
 
 index = 0
