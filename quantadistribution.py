@@ -2,15 +2,15 @@
 
 import random
 
-def draw(inputlist):
-    upperlimit = max(inputlist)
+def draw(inputlist):            # Draw a bar chart of the input list
+    upperlimit = max(inputlist) # Don't make the whole chart higher than necessary
     for threshold in reversed(range(0, upperlimit)):
         for entry in range(0, len(inputlist)):
             if inputlist[entry] > threshold:
-                print "#",
+                print "#",      # Draw one part of a bar
             else:
-                print " ",
-        print ""        #newline
+                print " ",      # Padding
+        print ""                # Move to a new line
 
 def convertodistribution(inputlist):
     output = []
